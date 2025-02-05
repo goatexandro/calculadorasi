@@ -51,7 +51,7 @@ jobs:
         password: ${{ secrets.DOCKER_TOKEN }}    
   
 
-    - name: Extraer versiÃ³n del tag
+    - name: Extraer version del tag
       id: extract_version
       run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
